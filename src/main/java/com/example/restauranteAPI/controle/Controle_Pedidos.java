@@ -22,7 +22,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173/", "http://localhost:5174/"})
+@CrossOrigin(origins = {"http://localhost:5173","https://dz38dsepaezxv.cloudfront.net"})
 public class Controle_Pedidos {
     @Autowired
     Repositorio_Pedidos repositorioPedidos;

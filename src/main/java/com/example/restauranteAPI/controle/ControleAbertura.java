@@ -20,7 +20,7 @@ import java.time.ZoneId;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = {"http://localhost:5173","https://dz38dsepaezxv.cloudfront.net"})
 public class ControleAbertura {
     @Autowired
     Repositorio_abertura repositorioAbertura;
