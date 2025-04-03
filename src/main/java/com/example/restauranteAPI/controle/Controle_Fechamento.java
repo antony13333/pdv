@@ -35,7 +35,7 @@ public class Controle_Fechamento {
     public ResponseEntity<Object> fecharCaixa (@RequestBody  @Valid Record_Fechamento recordFechamento) {
         var fechamento = new Modelo_Fechamento();
         List<ModeloAbertura> aberturas = repositorioAbertura.findAll();
-        ModeloAbertura aberturaCorrespondente = aberturas.getLast();
+        ModeloAbertura aberturaCorrespondente = aberturas.get(aberturas.size() - 1);
         List<Modelo_Fechamento> fechamentos = repositorioFechamento.findAll();
         LocalDateTime hora = LocalDateTime.now();
 
@@ -97,7 +97,7 @@ public class Controle_Fechamento {
         repositorioFN.save(fn);
         var relacao = new AberturaFechamento();
         List<AberturaFechamento> aberturaFechamentos = repositorioAberFech.findByidAbertura(aberturaCorrespondente);
-        relacao = aberturaFechamentos.getLast();
+        relacao = aberturaFechamentos.get(aberturaFechamentos.size() - 1);
         relacao.setIdFechamento(fechamento);
         repositorioAberFech.save(relacao);
         fechamento.setRelacao(relacao);
