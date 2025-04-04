@@ -23,7 +23,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 
-@CrossOrigin(origins = {"http://localhost:5173","https://dz38dsepaezxv.cloudfront.net"})
+@CrossOrigin(origins = {"http://localhost:5173","https://d2wk73bhxwtu9d.cloudfront.net"})
 public class Controle_comandas {
 
     @Autowired

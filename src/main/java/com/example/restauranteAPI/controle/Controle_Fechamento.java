@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173","https://dz38dsepaezxv.cloudfront.net"})
+@CrossOrigin(origins = {"http://localhost:5173","https://d2wk73bhxwtu9d.cloudfront.net"})
 public class Controle_Fechamento {
     @Autowired
     RepositoryNotas repositoryNotas;
