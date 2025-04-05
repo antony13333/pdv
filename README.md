@@ -15,7 +15,7 @@ Tecnologias e Ferramentas Utilizadas:
 Estrutura e Funcionamento:
 	•	O sistema foi desenvolvido para gerenciar comandas de um restaurante, permitindo operações como:
 	•	Criação de comandas
-	•	Adição de produtos com quantidade
+	•	Adição de produtos
 	•	Cálculo automático do valor total
 	•	Atualização e fechamento de comandas
 	•	Gerenciamento de pedidos
